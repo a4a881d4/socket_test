@@ -66,7 +66,7 @@ class sock_recv(threading.Thread):
             
             
 class sock_send(threading.Thread):
-    def __init__(self,sock,addr):
+    def __init__(self,sock):
         threading.Thread.__init__(self)
         self.sock=sock
         self.time_out=0.005

@@ -40,7 +40,7 @@ class sock_recv(threading.Thread):
         PayloadLen = 0
         while True:
             data, addr = self.sock.recvfrom(1200+8)
-            if self.start_state==0:
+            if self.start==0:
                 self.start_state = 1
                 start_time = time.time()
             PayloadLen = PayloadLen + len(data)
