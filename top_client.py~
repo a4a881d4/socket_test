@@ -1,7 +1,7 @@
 from CliSocket import CliSocket
 from SerSocket import SerSocket
 
-host='127.0.0.1'
+host='localhost'
 #host = '10.0.77.111'
 port=13053
 addr=(host,port)
